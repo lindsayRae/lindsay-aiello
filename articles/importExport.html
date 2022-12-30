@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>ES6 Import and Export</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/codestyle.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../libs/slick/slick.css"/>
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header -->
+    
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__menu">
+            <input type="checkbox" id="menu-burger" class="header__menu-status" hidden/>
+            <label for="menu-burger" class="header__burger">
+                <span></span>
+            </label>
+            <nav class="header__nav">
+                <div class="header__nav-item">
+                    <a href="../home.html" class="header__nav-link text--uppercase">home</a>
+                </div>
+                <div class="header__nav-item">
+                    <a href="../home.html#projects" class="header__nav-link text--uppercase">projects</a>
+                </div>
+                <div class="header__nav-item">
+                    <a href="../home.html#about" class="header__nav-link text--uppercase">about</a>
+                </div>
+               
+                <div class="header__nav-item">
+                    <a href="../blog.html" class="header__nav-link text--uppercase">blog</a>
+                </div>
+                <!-- <div class="header__nav-item">
+                    <a href="./resources.html" class="header__nav-link text--uppercase">code resources</a>
+                </div> -->
+                <div class="header__nav-item">
+                        <a href="../home.html" class="header__nav-link text--uppercase">resume</a>
+                    </div>
+                <div class="header__nav-item">
+                    <a href="../home.html#contacts" class="header__nav-link text--uppercase">contact</a>
+                </div>
+            </nav>
+            <div class="header__logo">
+                <a href="../home.html" class="logo">
+                    Lindsay Aiello
+                </a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+    <!-- end of header -->
+
+    <!-- socials -->
+    
+    <div class="socials">
+            <nav class="socials__nav">
+                <div class="socials__nav-item">
+                    <a href="https://github.com/lindsayRae" class="socials__link" target="_blank">LinkedIn</a>
+                </div>
+                <div class="socials__nav-item">
+                    <a href="https://github.com/lindsayRae" class="socials__link" target="_blank">GitHub</a>
+                </div>        
+            </nav>
+    </div>
+
+
+    <!-- end of socials -->
+    <div class="article">
+        <div class="container container--xl">
+            <div class="row">
+                
+                <div class="col col--lg-10 col--lg-offset-1">
+                    <h1 class="page__title article__title">ES6 Import and Export</h1>
+                    <div class="page__subtitle article__subtitle">
+                        <div class="article__date">July 1st, 2019</div>                       
+                    </div>
+                </div>
+                <div class="col col--lg-10 col--lg-offset-1">
+                    <div class="article__image">
+                        <figure>
+                            <img src="../img/importExport/importExport1920.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="article__content">
+                        <div class="row">
+                            <div class="col col--sm-10 col--sm-offset-1 col--md-10 col--md-offset-1 col--lg-8 col--lg-offset-2">
+                                <h5 class="article__heading">Introduction</h5>
+                                <div class="article__text">
+                                    <p>Today we are going to talk about JavaScript modules. This is a newer feature with ES6 and modules allow us the use of Import and Export in our JS files. If you want to keep you code base organized then read on because this is actually a pretty easy concept to get started with. I am going to go over why we would use modules with <code class="syntax">import</code> and <code class="syntax">export</code> and where we would use it in our code. We will also review some sample code so you can understand the syntax and get started on your own project.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col col--sm-10 col--sm-offset-1 col--md-10 col--md-offset-1 col--lg-8 col--lg-offset-2">
+                                <h5 class="article__heading">Why Modules?</h5>
+                                <div class="article__text">
+                                    <p>Think about any textbook you have read. Is all of the context in one big chapter or is it divided up into many chapters? I am assuming you answered that the textbook was divided up into chapters; we can think of code modules in a similar way. It is a way to organize your code and allows you to share data between scopes. Think of the term modules more as a concept and the specific syntax is when we would use the keywords <code class="syntax">import</code> and <code class="syntax">export</code>. At this point you are probably familiar with scope in JavaScript but if you need a quick refresher check out the MDN <a href="https://developer.mozilla.org/en-US/docs/Glossary/Scope" target="_blank">docs</a>. As your application grows, it can be harder to maintain when everything is in one giant file. Modularizing your code base is a clean way to group together related logic and can also be helpful when debugging. If you read my earlier article on <a href="./classes.html" target="_blank">JavaScript Classes</a> where I built a small game with a Monster Class, Hero Class you might have noticed that the very small application grew pretty quickly. You can read that article <a href="" target="_blank">here</a> to take a quick glance at the code or just continue on with this article. I want to take that earlier example and break it up into 3 separate files: <code class="files">Monster.js</code>, <code class="files">Hero.js</code>, and <code class="files">main.js</code>. This is where Import and Export will come into play. Its allows me to write my code in separate files but share what I need with other files.</p>
+                                </div>
+                            </div>
+                                                  
+                            <div class="col col--sm-10 col--sm-offset-1 col--md-10 col--md-offset-1 col--lg-8 col--lg-offset-2">
+                                <h5 class="article__heading">Definitions</h5>
+                                
+                                <div class="article__text">
+                                    <p>Module in JavaScript is more or less just a collection of new features that were added in ES6. Yes there are plenty of libraries and frameworks like Webpack and Babel that can do the same thing but modern browsers can now support modules which can optimize load time without the use of other libraries. A few things to keep in mind with modules: 
+                                        <ul>
+                                            <li>Modules have a lexical top level scope so creating a variable with <code class="syntax">var</code> does not create a global variable </li>
+                                            <li><code class="syntax">import</code> and <code class="syntax">export</code> are only available within modules </li>
+                                            <li>You can export functions, variables and classes</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col col--sm-10 col--sm-offset-1 col--md-10 col--md-offset-1 col--lg-8 col--lg-offset-2">
+                                <h6 class="article__heading">Strict Mode</h6>
+                                <div class="article__text">
+                                    <p>Imported modules are in strict mode whether you declare it or not. Before we jump into the code I wanted to review what strict mode is. <code class="syntax">“use strict”;</code> helps developers to write cleaner code. Here are a few benefits of using strict mode:  
+                                        <ul>
+                                            <li>It will throw errors that otherwise would be silent</li>
+                                            <li>It can fix mistakes that make it difficult for JS engines to perform optimizations</li>
+                                            <li>Can prohibit syntax that will likely be defined in future versions of ES6</li>
+                                            <li>Won’t allow you to use a variable without declaring it </li>
+                                            <li>Deleting a variable/object/function is not allowed</li>
+                                            <li>Duplicating a variable name is not allowed</li>
+                                            <li>Makes it easier to write secure JavaScript </li>
+                                        </ul>
+                                    </p>
+                                </div>                                    
+                            </div>
+                            </div>
+
+                            <div class="col col--sm-10 col--sm-offset-1 col--md-10 col--md-offset-1 col--lg-8 col--lg-offset-2">
+                                <h5>Getting Started</h5>
+                                <div class="article__text">
+                                    <p>This is the “easy” part. We will dive a little deeper into the syntax and many of the options a little later but your main setup is as follows:  
+                                        <ol>
+                                            <li>Set up an <code class="files">home.html</code> file with your normal boilerplate</li>
+                                            <li>Create a <code class="files">main.js</code> file and include in your HTML before your closing body tag</li>
+                                            <li>Create a <code class="files">Monster.js</code> file</li>
+                                            <li>Create a <code class="files">Hero.js</code> file </li>
+                                            <li>Notice I did not mention to add those last two js file in the <code class="files">home.html</code></li>
+                                            <li>Inside <code class="files">main.js</code> script tag add <code class="syntax">type=”module”</code>
+                                                <ul>
+                                                    <li><code class="syntax">type=”module”</code> is all you need for the browser to treat the external script (or inline script) as a ES6 module</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </p>
+                                    <img src="../img/importExport/importExport1.png">
+                                </div>
+                            </div>  
+                            <div class="col col--sm-10 col--sm-offset-1 col--md-10 col--md-offset-1 col--lg-8 col--lg-offset-2">
+                                <h6 class="article__heading">Export</h6>
+                                <div class="article__text">
+                                    <p><code class="syntax">export</code> is a key word used to share information across JavaScript scopes, which in our case will be another file. In the following example we will start in the <code class="files">Monster.js</code> file.  There are two types of exports: <code class="syntax">named</code> and <code class="syntax">default</code>. You can have multiple named exports per module but a default export can only have one export. First we will walk through a named export. In this example I have a variable, function and a class that I want to import into my <code class="files">main.js</code> file. To export all  of these I need to add the keyword <code class="syntax">export</code> before each declaration.
+                                    </p>
+                                    <img src="../img/importExport/importExport2.png">
+                                    <p>We can also clean up the syntax a little by exporting the features I want to share in one line separated by a comma and removing the export keyword before each definition. </p>
+                                    <img src="../img/importExport/importExport3.png">
+                                    <p>The other option for export is a default export where you can choose to rename whatever you are importing. To me this seemed confusing and I didn’t understand why you would change your own function/variable/class name. It was later pointed out to me that it could be useful if you were importing code that you didn’t write, you might want to change the name for it to make more sense in your specific application. This syntax is adding the keyword default after export so it would look something like this: 
+                                        </p>
+                                        <img src="../img/importExport/importExport4.png">
+                                        <p>You can also rename named exports but for this article I will just stick with the simple example of a named export.  </p>
+                                </div>
+                            </div>
+
+                            <div class="col col--sm-10 col--sm-offset-1 col--md-10 col--md-offset-1 col--lg-8 col--lg-offset-2">
+                                <h6 class="article__heading">Import</h6>
+                                <div class="article__text">
+                                    <p>We just set up the export of what we wanted to share with the import file but before we can access that information we need to tell our file what is coming in.  Its is kinda like the <code class="files">Monster.js</code> file threw us some data and now in the import file we need to catch it. Import is a statement that will go on the top line of your code where we use the keyword <code class="syntax">import</code>, tell the browser what it is we are importing and where it is from. Open back up the <code class="files">main.js</code> file. We are going to <code class="syntax">import</code> a variable, function and  Monster class to the <code class="files">main.js</code> file. The syntax breakdown is as follows: 
+                                            <code class="syntax">import { whatYouAreImporting } from ‘filepath.js’;</code> The file path is called the “module specifier” or the “import specifier”. After you have added the import statement(s) add a <code class="syntax">console.log("testing")</code> in to prove that you now have access to your exports. </p>
+                                    <img src="../img/importExport/importExport5.png">  
+                                    <p>If you want to import everything from <code class="files">Monster.js</code> we can use the import all syntax.  For example instead of specifically naming all of the imports like above, the syntax would be: <code class="syntax">import * as anyName from ‘./Monster.js’;</code> The <code class="syntax">*</code> means ‘all’ and <code class="syntax">anyName</code> can be any name but it represents the name of the module object being imported. The caveat here is that you need to use <code class="syntax">anyName</code> whenever you want to use that specific module object. Here is an example:</p>
+                                    <img src="../img/importExport/importExport6.png">
+                                    <p>Notice in the first example with the variable <code class="syntax">testVariable</code>, I needed to add <code class="syntax">myModule.testVariable</code> to gain access to that data. The examples I am providing is the very basic way to use import. I would recommend checking out the MDN docs on <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" target="_blank">import</a> to see all the ways to use import, but my examples will get you started. </p>  
+                                </div>
+                            </div>
+                            <div class="col col--sm-10 col--sm-offset-1 col--md-10 col--md-offset-1 col--lg-8 col--lg-offset-2">
+                                <h6 class="article__heading">Conclusion</h6>
+                                <div class="article__text">
+                                    <p>Today we talked about modules and the use of import and export. Using modules is a great way to keep you files clean and organized. I like to think of import and export as a way our files can communicate. We set up one JS file that will be reference in the HTML. We called this <code class="files">main.js</code> and in the script tag we needed to add <code class="syntax">type=”module”</code>. This is the file that you will be importing to. We learned that you can import data individually or all with the <code class="syntax">*</code> syntax.  Our <code class="files">Monster.js</code> file is where we used the <code class="syntax">export</code> syntax. We exported a variable, function and a class. Note that this file we did NOT add in the bottom of the HTML with a script tag. Try taking these steps and go a little bit further. Create a <code class="files">Hero.js</code> file, add a Hero class and with a couple simple methods then import it to the <code class="files">main.js</code> file just like we did with the <code class="files">Monster.js</code>. Now in <code class="files">main.js</code> you have access to your exports from <code class="files">Monster.js</code> and <code class="files">Hero.js</code> and you can have those two classes interacting in <code class="files">main.js</code>. Super cool right?! 
+                                    </p>  
+                                    
+                                </div>
+                            </div>
+                            <div class="article__quote">
+                                    <div class="col col--sm-10 col--sm-offset-1 col--md-10 col--md-offset-1 col--lg-8 col--lg-offset-2">
+                                        <blockquote>
+                                            Learning to code is full of never ending Mini-Matrix Moments... Don't give up and you will start to see it!
+                                        </blockquote>
+                                        - Lindsay Aiello
+                                    </div>
+                                </div>  
+                        </div>
+                    </div>
+                    
+
+                                
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    
+    <footer class="footer">
+            <div class="container">
+                <div class="row nomargin">
+                    <div class="col col--xs-12 col--sm-6 col--md-4 nopadding">
+                        <p class="footer__text">© 2019 Lindsay Aiello All rights reserved</p>
+                    </div>
+                    <div class="col col--xs-12 col--sm-6 col--md-4 nopadding">
+                        <p class="footer__socials">
+                            Social<span class="footer__dash"></span>
+                            <a href="https://github.com/lindsayRae" target="_blank" class="footer__icon">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lindsay-aiello/" target="_blank" class="footer__icon">
+                                <i class="fab fa-linkedin fa-lg"></i>
+                            </a>                    
+                        </p>
+                    </div>
+                    <div class="col col--xs-5 col--sm-6 col--md-1 nopadding">
+                        <div class="footer__mail">
+                            <a class="footer__mail-link" href="mailto:lindsay.aiellodev@gmail.com">lindsay.aiellodev@gmail.com</a>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- end of footer -->
+
+    <!-- scripts -->
+    
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/options.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- end of scripts -->
+</body>
+
+</html>

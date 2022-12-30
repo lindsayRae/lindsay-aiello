@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <title>Lindsay Aiello - Blog</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/image.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__menu">
+          <input
+            type="checkbox"
+            id="menu-burger"
+            class="header__menu-status"
+            hidden
+          />
+          <label for="menu-burger" class="header__burger">
+            <span></span>
+          </label>
+          <nav class="header__nav">
+            <div class="header__nav-item">
+              <a href="./index.html" class="header__nav-link text--uppercase"
+                >home</a
+              >
+            </div>
+            <div class="header__nav-item">
+              <a
+                href="./index.html#projects"
+                class="header__nav-link text--uppercase"
+                >projects</a
+              >
+            </div>
+            <div class="header__nav-item">
+              <a
+                href="./index.html#about"
+                class="header__nav-link text--uppercase"
+                >about</a
+              >
+            </div>
+
+            <div class="header__nav-item">
+              <a href="./blog.html" class="header__nav-link text--uppercase"
+                >blog</a
+              >
+            </div>
+            <!-- <div class="header__nav-item">
+                            <a href="./resources.html" class="header__nav-link text--uppercase">code resources</a>
+                        </div> -->
+            <div class="header__nav-item">
+              <a href="./resume.html" class="header__nav-link text--uppercase"
+                >resume</a
+              >
+            </div>
+            <div class="header__nav-item">
+              <a
+                href="./index.html#contacts"
+                class="header__nav-link text--uppercase"
+                >contact</a
+              >
+            </div>
+          </nav>
+          <div class="header__logo">
+            <a href="./index.html" class="logo"> Lindsay Aiello </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- end of header -->
+
+    <!-- socials -->
+
+    <div class="socials">
+      <nav class="socials__nav">
+        <div class="socials__nav-item">
+          <a
+            href="https://github.com/lindsayRae"
+            class="socials__link"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+        <div class="socials__nav-item">
+          <a
+            href="https://github.com/lindsayRae"
+            class="socials__link"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </nav>
+    </div>
+    <!-- end of socials -->
+
+    <!-- main content-->
+
+    <div class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="page__title blog__title">Blog</h1>
+            <div class="blog__grid">
+              <!-- blog grid -->
+
+              <div class="row">
+                <div class="col col--sm-6 col--md-4">
+                  <a href="./articles/eventListeners.html" class="blog__item">
+                    <figure class="blog__item-img">
+                      <img
+                        src="./img/eventListeners/eventListeners720.png"
+                        alt="JavaScript Event Listeners"
+                      />
+                    </figure>
+                    <h5 class="blog__item-title">JavaScript Event Listeners</h5>
+                    <p class="blog__item-text">
+                      When JavaScript was first introduced to me it was
+                      explained as any movement or action that is taking place
+                      on the screen (yes I know you can do movements/animations
+                      with CSS but stick with me). Think about a simple button
+                      that shows an alert saying hello when you click it. This
+                      is being done with event Emitters and Listeners in JS!
+                    </p>
+                    <p class="blog__item-date">March 1st, 2019</p>
+                  </a>
+                </div>
+
+                <div class="col col--sm-6 col--md-4">
+                  <a href="./articles/dynamicElements.html" class="blog__item">
+                    <figure class="blog__item-img">
+                      <img
+                        src="./img/dynamicElements/element720.png"
+                        alt="Building Dynamic Elements in JavaScript"
+                      />
+                    </figure>
+                    <h5 class="blog__item-title">
+                      Building Dynamic Elements with JavaScript
+                    </h5>
+                    <p class="blog__item-text">
+                      Today we are going to talk about building dynamic elements
+                      in Vanilla JavaScript! I am actually pretty excited about
+                      this topic because it is something that is extremely
+                      useful, yet I don't feel like there are many resources on
+                      the web on how to do this.
+                    </p>
+                    <p class="blog__item-date">April 1st, 2019</p>
+                  </a>
+                </div>
+
+                <div class="col col--sm-6 col--md-4">
+                  <a href="./articles/fetch.html" class="blog__item">
+                    <figure class="blog__item-img">
+                      <img
+                        src="./img/fetch/fetch720.png"
+                        alt="ES6 Fetch Method"
+                      />
+                    </figure>
+                    <h5 class="blog__item-title">ES6 Fetch Method</h5>
+                    <p class="blog__item-text">
+                      If you are new developer you have probably been learning a
+                      lot about HTML CSS and JavaScript. You have probably made
+                      small applications and or static web pages. At some point
+                      you are going to need to actually work with dynamic data
+                      from a server, or a RESTful API. Today we are going to
+                      take a quick look at what a RESTful API is, what the Fetch
+                      method is and then we will go through some examples using
+                      Fetch method with RESTful APIs.
+                    </p>
+                    <p class="blog__item-date">June 6, 2019</p>
+                  </a>
+                </div>
+
+                <div class="col col--sm-6 col--md-4">
+                  <a href="./articles/classes.html" class="blog__item">
+                    <figure class="blog__item-img">
+                      <img
+                        src="./img/classes/class720.png"
+                        alt="JavaScript Classes"
+                      />
+                    </figure>
+                    <h5 class="blog__item-title">JavaScript Classes</h5>
+                    <p class="blog__item-text">
+                      Today we are going to talk about JavaScript Classes. A
+                      class is a type of function, not a new programming
+                      concept. Many other languages use Classes and the addition
+                      of Classes in ES6 JS makes it an easier transition for
+                      developers to move between languages. You will often see
+                      Classes in JS referred as “syntactical sugar” over
+                      prototypes and inheritance. This can offer cleaner, easier
+                      to read and maintain code. In this article you will learn
+                      what a Class is, an example of why you would want to use
+                      classes then we will go through and build one together.
+                    </p>
+                    <p class="blog__item-date">June 15, 2019</p>
+                  </a>
+                </div>
+
+                <div class="col col--sm-6 col--md-4">
+                  <a href="./articles/importExport.html" class="blog__item">
+                    <figure class="blog__item-img">
+                      <img
+                        src="./img/importExport/importExport720.png"
+                        alt="ES6 Import and Export"
+                      />
+                    </figure>
+                    <h5 class="blog__item-title">ES6 Import and Export</h5>
+                    <p class="blog__item-text">
+                      Today we are going to talk about JavaScript modules. This
+                      is a newer feature with ES6 and modules allow us the use
+                      of Import and Export in our JS files. If you want to keep
+                      you code base organized then read on because this is
+                      actually a pretty easy concept to get started with.
+                    </p>
+                    <p class="blog__item-date">July 1st, 2019</p>
+                  </a>
+                </div>
+
+                <div class="col col--sm-6 col--md-4">
+                  <a href="./articles/webpack.html" class="blog__item">
+                    <figure class="blog__item-img background-wht">
+                      <img
+                        src="./img/webpack/webpack720.png"
+                        alt="Getting Started with Webpack"
+                      />
+                    </figure>
+                    <h5 class="blog__item-title">
+                      Getting Started with Webpack
+                    </h5>
+                    <p class="blog__item-text">
+                      Today we are going to talk briefly about what webpack is
+                      and specifically I am going to do a walk through on how to
+                      set up your first Webpack project.
+                    </p>
+                    <p class="blog__item-date">July 15, 2019</p>
+                  </a>
+                </div>
+              </div>
+
+              <!-- end of blog grid -->
+              <div class="blog__pagination">
+                <!-- pagination -->
+
+                <!-- <ul class="pagination">
+                                <li class="pagination__item pagination__item--prev">
+                                    <a href="#" class="pagination__link">Prev</a>
+                                </li>
+                                <li class="pagination__item pagination__item--active">
+                                    <a href="#" class="pagination__link">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">3</a>
+                                </li>
+                                <li class="pagination__item pagination__item--dots">
+                                    <span class="pagination__dots">...</span>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">33</a>
+                                </li>
+                                <li class="pagination__item pagination__item--next">
+                                    <a href="#" class="pagination__link">Next</a>
+                                </li>
+                            </ul> -->
+
+                <!-- end of pagination -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end main content-->
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row nomargin">
+          <div class="col col--xs-12 col--sm-6 col--md-4 nopadding">
+            <p class="footer__text">
+              © 2019 Lindsay Aiello All rights reserved
+            </p>
+          </div>
+          <div class="col col--xs-12 col--sm-6 col--md-4 nopadding">
+            <p class="footer__socials">
+              Social<span class="footer__dash"></span>
+              <a
+                href="https://github.com/lindsayRae"
+                target="_blank"
+                class="footer__icon"
+              >
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/lindsay-aiello/"
+                target="_blank"
+                class="footer__icon"
+              >
+                <i class="fab fa-linkedin fa-lg"></i>
+              </a>
+            </p>
+          </div>
+          <div class="col col--xs-5 col--sm-6 col--md-1 nopadding">
+            <div class="footer__mail">
+              <a class="footer__mail-link" href="mailto:lindsay@iello.me"
+                >lindsay@iello.me</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end of footer -->
+
+    <!-- scripts -->
+
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="js/options.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- end of scripts -->
+  </body>
+</html>

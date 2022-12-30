@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="portfolio and blog" />
+    <meta name="keywords" content="software developer, web developer" />
+    <meta name="author" content="laiello" />
+    <title>Lindsay Aiello</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/effects.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__menu">
+          <input
+            type="checkbox"
+            id="menu-burger"
+            class="header__menu-status"
+            hidden
+          />
+          <label for="menu-burger" class="header__burger">
+            <span></span>
+          </label>
+          <nav class="header__nav">
+            <div class="header__nav-item">
+              <a href="./index.html" class="header__nav-link text--uppercase"
+                >home</a
+              >
+            </div>
+            <div class="header__nav-item">
+              <a
+                href="./index.html#projects"
+                class="header__nav-link text--uppercase"
+                >projects</a
+              >
+            </div>
+            <div class="header__nav-item">
+              <a
+                href="./index.html#about"
+                class="header__nav-link text--uppercase"
+                >about</a
+              >
+            </div>
+
+            <div class="header__nav-item">
+              <a href="./blog.html" class="header__nav-link text--uppercase"
+                >blog</a
+              >
+            </div>
+            <!-- <div class="header__nav-item">
+                    <a href="./resources.html" class="header__nav-link text--uppercase">code resources</a>
+                </div> -->
+            <div class="header__nav-item">
+              <a href="./resume.html" class="header__nav-link text--uppercase"
+                >resume</a
+              >
+            </div>
+            <div class="header__nav-item">
+              <a
+                href="./index.html#contacts"
+                class="header__nav-link text--uppercase"
+                >contact</a
+              >
+            </div>
+          </nav>
+          <div class="header__logo">
+            <a href="./index.html" class="logo"> Lindsay Aiello </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- end of header -->
+
+    <!-- socials -->
+
+    <div class="socials">
+      <nav class="socials__nav">
+        <div class="socials__nav-item">
+          <a
+            href="https://www.linkedin.com/in/lindsay-aiello"
+            class="socials__link"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+        <div class="socials__nav-item">
+          <a
+            href="https://github.com/lindsayRae"
+            class="socials__link"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </nav>
+    </div>
+
+    <!-- end of socials -->
+    <main class="home">
+      <section class="section section--welcome home__welcome">
+        <div class="home__welcome-bg parallax" data-stellar-ratio="0.7"></div>
+        <div class="home__welcome-layer">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col col--sm-8 col--sm-offset-2 col--md-12 col--md-offset-0 col--lg-10 col--lg-offset-1"
+              >
+                <div class="row">
+                  <div class="col col--md-6">
+                    <h2 class="home__welcome-title effect-shine">
+                      Hello<br />
+                      I'm Lindsay
+                    </h2>
+                    <h3 class="home__blog-preview-title">Web Developer</h3>
+                  </div>
+                  <div class="col col--md-6">
+                    <p class="home__welcome-content">
+                      Welcome to my site! I started my coding journey back in
+                      July 2017 after I attended a coding bootcamp open house.
+                      This was the final decision point where I decided to take
+                      the trajectory of my career to a new level. I knew it
+                      wasn’t going to be easy but I saw all the growing
+                      opportunities in the tech industry and I was determined to
+                      be a part of it. My bootcamp was a 10 week program and I
+                      graduated July 2018 from the Front End Web Development
+                      program. I started my first Front End Dev job right away.
+                      On this site you will find some of my work but mainly my
+                      blog. As I am learning a new topic, I write a small blog
+                      about it to solidify my learning and make available anyone
+                      who might find it helpful. Thanks for stopping by!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--portfolio home__portfolio" id="projects">
+        <div class="container">
+          <!-- portfolio -->
+          <div class="row">
+            <div class="col col--md-12">
+              <h2 class="home__contacts-title">projects</h2>
+            </div>
+          </div>
+
+          <div class="portfolio portfolio--grid">
+            <div class="portfolio__item">
+              <a
+                href="/projects/rockpaperscissors.html"
+                target="_top"
+                class="portfolio__item-link"
+              >
+                <div class="portfolio__item-img">
+                  <img
+                    src="/img/projects/rps580x432.png"
+                    alt="Architecture magazine"
+                  />
+                </div>
+                <div class="portfolio__item-title">
+                  <h5 class="portfolio__title">First Application</h5>
+                  <small class="portfolio__subtitle"
+                    >Rock Paper Scissors - May 2018</small
+                  >
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio__item">
+              <a
+                href="/projects/doomsdaytrail.html"
+                target="_top"
+                class="portfolio__item-link"
+              >
+                <div class="portfolio__item-img">
+                  <img
+                    src="/img/projects/doomsday580x432.png"
+                    alt="Doomsday Trail"
+                  />
+                </div>
+                <div class="portfolio__item-title">
+                  <h5 class="portfolio__title">Bootcamp Group Project</h5>
+                  <small class="portfolio__subtitle"
+                    >Doomsday Trail - July 2018</small
+                  >
+                </div>
+              </a>
+            </div>
+            <div class="portfolio__item">
+              <a
+                href="/projects/ssb.html"
+                target="_top"
+                class="portfolio__item-link"
+              >
+                <div class="portfolio__item-img">
+                  <img
+                    src="/img/projects/ssb580x436.png"
+                    alt="Doomsday Trail"
+                  />
+                </div>
+                <div class="portfolio__item-title">
+                  <h5 class="portfolio__title">Shirley Sei Bella</h5>
+                  <small class="portfolio__subtitle"
+                    >Salon Website - January 2020</small
+                  >
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio__item">
+              <a
+                href="/projects/myprs.html"
+                target="_top"
+                class="portfolio__item-link"
+              >
+                <div class="portfolio__item-img">
+                  <img
+                    src="/img/projects/myPRs580.jpg"
+                    alt="myPrs Application"
+                  />
+                </div>
+                <div class="portfolio__item-title">
+                  <h5 class="portfolio__title">Fullstack Application</h5>
+                  <small class="portfolio__subtitle"
+                    >Fitness Tracker in Vanilla JS</small
+                  >
+                </div>
+              </a>
+            </div>
+            <div class="portfolio__item">
+              <a target="_top" class="portfolio__item-link">
+                <div class="portfolio__item-img">
+                  <img
+                    src="/img/projects/comingsoon2.png"
+                    alt="Architecture magazine"
+                  />
+                </div>
+                <div class="portfolio__item-title">
+                  <h5 class="portfolio__title">Coming Soon</h5>
+                  <small class="portfolio__subtitle"
+                    >Fitness Tracker in React</small
+                  >
+                </div>
+              </a>
+            </div>
+
+            <!-- <div class="portfolio__item">
+                            <a href="./project.html" target="_top" class="portfolio__item-link">
+                                <div class="portfolio__item-img">
+                                    <img src="http://placehold.it/580x432" alt="Salon Website">
+                                </div>
+                                <div class="portfolio__item-title">
+                                    <h5 class="portfolio__title">Salon Website</h5>
+                                    <small class="portfolio__subtitle">Shirley Sei Bella</small>
+                                </div>
+                            </a>
+                        </div> -->
+
+            <!-- <div class="portfolio__item">
+                            <a href="./project.html" target="_top" class="portfolio__item-link">
+                                <div class="portfolio__item-img">
+                                    <img src="http://placehold.it/580x432" alt="game">
+                                </div>
+                                <div class="portfolio__item-title">
+                                    <h5 class="portfolio__title">Game</h5>
+                                    <small class="portfolio__subtitle">Hero vs Monster</small>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="portfolio__item">
+                            <a href="./project.html" target="_top" class="portfolio__item-link">
+                                <div class="portfolio__item-img">
+                                    <img src="http://placehold.it/580x432" alt="Tourist website">
+                                </div>
+                                <div class="portfolio__item-title">
+                                    <h5 class="portfolio__title">Fitness Tracker</h5>
+                                    <small class="portfolio__subtitle">My PRs</small>
+                                </div>
+                            </a>
+                        </div> -->
+
+            <!-- <div class="portfolio__item">
+                            <a href="./project.html" target="_top" class="portfolio__item-link">
+                                <div class="portfolio__item-img">
+                                    <img src="http://placehold.it/580x432" alt="Cafe">
+                                </div>
+                                <div class="portfolio__item-title">
+                                    <h5 class="portfolio__title">Cafe</h5>
+                                    <small class="portfolio__subtitle">Icecream</small>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="portfolio__item">
+                            <a href="./project.html" target="_top" class="portfolio__item-link">
+                                <div class="portfolio__item-img">
+                                    <img src="http://placehold.it/580x432" alt="Architector&#39;s portfolio">
+                                </div>
+                                <div class="portfolio__item-title">
+                                    <h5 class="portfolio__title">Architector&#39;s portfolio</h5>
+                                    <small class="portfolio__subtitle">Jogn Doe</small>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="portfolio__item">
+                            <a href="./project.html" target="_top" class="portfolio__item-link">
+                                <div class="portfolio__item-img">
+                                    <img src="http://placehold.it/580x432" alt="Hotel website">
+                                </div>
+                                <div class="portfolio__item-title">
+                                    <h5 class="portfolio__title">Hotel website</h5>
+                                    <small class="portfolio__subtitle">National tourism</small>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="portfolio__item">
+                            <a href="./project.html" target="_top" class="portfolio__item-link">
+                                <div class="portfolio__item-img">
+                                    <img src="http://placehold.it/580x432" alt="Fashion Magazine">
+                                </div>
+                                <div class="portfolio__item-title">
+                                    <h5 class="portfolio__title">Fashion Magazine</h5>
+                                    <small class="portfolio__subtitle">Favorites</small>
+                                </div>
+                            </a>
+                        </div>                    -->
+          </div>
+
+          <!-- end of portfolio -->
+        </div>
+      </section>
+
+      <section class="section home__about" id="about">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col col--sm-8 col--sm-offset-2 col--md-12 col--md-offset-0 col--lg-10 col--lg-offset-1"
+            >
+              <div class="row">
+                <div class="col col--md-6">
+                  <h2 class="home__about-title">About me</h2>
+                </div>
+                <div class="col col--md-6">
+                  <p class="home__about-content">
+                    I live just outside Ann Arbor with my amazing husband and
+                    sweep pup Saige. I love learning about development and also
+                    staying active and living a healthy lifestyle. I recently
+                    became scuba certified and took my fear of being on the open
+                    water and literally just dove right in to appreciate the
+                    beautiful secret world underneath. I enjoy volleyball,
+                    lifting weights and time with family and friends. I am also
+                    currently pursuing my Associates in Science Degree in
+                    Information Systems: Programming in C++ to gain a better
+                    knowledge of all around development.
+                  </p>
+                </div>
+                <div class="col col--md-6">
+                  <figure class="home__about-figure">
+                    <img src="img/lindsay_dolphin.jpg" alt="My photo" />
+                  </figure>
+                </div>
+                <div class="col col--md-2">
+                  <h3 class="home__about-skills-title">Skills</h3>
+                  <!-- skills -->
+
+                  <ul class="skills">
+                    <li class="skills__item">
+                      <div class="skills__title">Javascript - ES6</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">jQuery</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">HTML &amp; CSS</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">Bootstrap 3 & 4</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">Node.js</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">MongoDB</div>
+                    </li>
+                  </ul>
+
+                  <!-- end of skills -->
+                </div>
+                <div class="col col--md-2">
+                  <h3 class="home__about-skills-title">Tools</h3>
+                  <!-- tools -->
+
+                  <ul class="skills">
+                    <li class="skills__item">
+                      <div class="skills__title">Webpack</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">Lucid Charts</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">Balsamic</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">Postman</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">GitHub</div>
+                    </li>
+                  </ul>
+
+                  <!-- end of tools -->
+                </div>
+
+                <div class="col col--md-2">
+                  <h3 class="home__about-skills-title">Courses</h3>
+                  <!-- classes -->
+
+                  <ul class="skills">
+                    <li class="skills__item">
+                      <div class="skills__title">Python</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">PHP</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title">C++</div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title"></div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__title"></div>
+                    </li>
+                  </ul>
+
+                  <!-- end of classes -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col--md-6"></div>
+                <div class="col col--md-6">
+                  <h3 class="home__about-skills-title">Learning Next</h3>
+                  <p>React</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--blog blog-section home__blog">
+        <div class="container">
+          <div class="row">
+            <div class="col col--md-12">
+              <h2 class="home__contacts-title">blog</h2>
+              <div class="row">
+                <div class="col">
+                  <div class="home__blog-wrapper">
+                    <h3 class="home__blog-preview-title">
+                      Learn Vanilla JavaScript First!
+                    </h3>
+                    <p class="home__blog-preview-text">
+                      There is so much to learn as a new developer which is
+                      certainly overwhelming. Getting the basics of HTML and CSS
+                      is of course the best place to start but when you get into
+                      JavaScript really take your time. The single best advice I
+                      can give a new developer is to Learn Vanilla JavaScript
+                      First! There is lots of noise out on the Web about
+                      frameworks and libraries and it will be tempting to jump
+                      into one of those. Try to resist! All of those tools are
+                      based on JavaScript so actually learning JavaScript will
+                      serve you justice in the long run. The majority of my blog
+                      articles (at least in the beginning) are on pieces of
+                      JavaScript that I needed to teach myself in my job so I
+                      wanted to write a article/tutorial on the topic for my own
+                      reference and potentially to help others. Check out my
+                      blog posts to see what I have learned or to learn along
+                      with me!
+                    </p>
+                    <a href="./blog.html" class="btn home__blog-link"
+                      >View blog posts</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--contacts home__contacts" id="contacts">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col col--sm-8 col--sm-offset-2 col--md-12 col--md-offset-0 col--lg-10 col--lg-offset-1"
+            >
+              <div class="row">
+                <div class="col col--md-12">
+                  <h2 class="home__contacts-title">Contact</h2>
+                </div>
+                <div class="col col--md-6">
+                  <p class="home__contacts-content">
+                    Have a question or want to share your story about learning
+                    tech?<br />Feel free to contact me!
+                  </p>
+                  <div class="home__contacts-info">
+                    <p class="home__contacts-content">
+                      Lindsay Aiello<br />
+                      Front End Developer<br />
+                      Ann Arbor, MI
+                    </p>
+                    <p class="home__contacts-mail">
+                      <a href="mailto:lindsay.aiellodev@gmail.com" target="_top"
+                        >lindsay.aiellodev@gmail.com</a
+                      >
+                    </p>
+                    <p class="home__contacts-tel">
+                      <a href="https://www.linkedin.com/in/lindsay-aiello/"
+                        >LinkedIn</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <!-- contact form -->
+                <!-- <div class="col col--md-6">
+                                    
+                                    
+                                <form class="form" id="contact-form">
+                                    <div class="row">
+                                        <div class="col field">
+                                        <input id="name" type="text" class="field__input field--name required" required>
+                                        <label for="name" class="field__label">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col field">
+                                        <input id="email" type="email" class="field__input field--email required" required>
+                                        <label for="email" class="field__label">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col field">
+                                        <textarea id="text" class="field__textarea field--message required" required placeholder="Contact form not working yet..."></textarea>
+                                        <label for="text" class="field__label">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                        <div class="form--notice"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="submit" class="btn form__btn form__btn--submit" value="Send message">
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                                </div> -->
+
+                <!-- end of contact form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row nomargin">
+          <div class="col col--xs-12 col--sm-6 col--md-4 nopadding">
+            <p class="footer__text">
+              © 2019 Lindsay Aiello All rights reserved
+            </p>
+          </div>
+          <div class="col col--xs-12 col--sm-6 col--md-4 nopadding">
+            <p class="footer__socials">
+              Social<span class="footer__dash"></span>
+              <a
+                href="https://github.com/lindsayRae"
+                target="_blank"
+                class="footer__icon"
+              >
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/lindsay-aiello/"
+                target="_blank"
+                class="footer__icon"
+              >
+                <i class="fab fa-linkedin fa-lg"></i>
+              </a>
+            </p>
+          </div>
+          <div class="col col--xs-5 col--sm-6 col--md-1 nopadding">
+            <div class="footer__mail">
+              <a
+                class="footer__mail-link"
+                href="mailto:lindsay.aiellodev@gmail.com"
+                >lindsay.aiellodev@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end of footer -->
+
+    <!-- scripts -->
+
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/stellar/jquery.stellar.js"></script>
+    <script src="js/options.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- end of scripts -->
+  </body>
+</html>

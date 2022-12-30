@@ -1,0 +1,37 @@
+
+
+code.files {
+    color: rgb(247, 44, 230);
+  }
+
+code.error {
+  color: rgb(184, 41, 41);
+}
+
+code.command {
+  color: rgb(93, 201, 5);
+}
+code.object {
+  color: rgb(5, 106, 201);
+}
+.syntax {
+  color:  rgb(93, 201, 5);
+}
+.verb {
+  color: rgb(0, 238, 255);
+}
+li {  
+  font-size: 16px; 
+  line-height: 32px;
+}
+
+thead {
+  font-size: 16px;
+}
+
+tbody {
+  font-size: 14px;
+}
+.table td {
+  padding: .75rem .5rem;
+}
